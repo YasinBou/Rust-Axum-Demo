@@ -4,7 +4,7 @@ use tokio::net::TcpListener;
 
 #[tokio::main]
 async fn main() {
-    let hello_route = Router::new().route(
+    let hello_route: Router = Router::new().route(
         "/hello",
         get(|| async {
             Html("Hello World</strong>") 
