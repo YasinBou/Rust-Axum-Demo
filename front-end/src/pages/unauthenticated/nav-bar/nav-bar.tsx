@@ -17,8 +17,8 @@ const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
                         </>
                     ) : (
                         <>
-                            <Link to="/login" className="text-gray-300 hover:text-white">Login</Link>
-                            <Link to="/register" className="text-gray-300 hover:text-white">Signup</Link>
+                            <Link to="/login" className="text-gray-300 hover:text-white">Log in</Link>
+                            <Link to="/register" className="text-gray-300 hover:text-white">Sign up</Link>
                         </>
                     )}
                 </div>
