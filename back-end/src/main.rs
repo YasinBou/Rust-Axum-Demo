@@ -7,7 +7,7 @@ async fn main() {
     let hello_route: Router = Router::new().route(
         "/hello",
         get(|| async {
-            Html("Hello World</strong>") 
+            Html("<strong>Hello World</strong>") 
         }),
     );
 

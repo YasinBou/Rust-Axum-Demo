@@ -1,0 +1,30 @@
+import { Link } from 'react-router-dom';
+
+interface NavbarProps {
+    isLoggedIn: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
+    return (
+        <nav className="bg-gray-800 p-4">
+            <div className="flex items-center justify-between w-full">
+                <Link to="/" className="text-white text-2xl font-bold">To-Do List</Link>
+                <div className="flex space-x-4">
+                    {isLoggedIn ? (
+                        <>
+                            <Link to="/profile" className="text-gray-300 hover:text-white">Profile</Link>
+                            <Link to="/" className="text-gray-300 hover:text-white">Log Out</Link>
+                        </>
+                    ) : (
+                        <>
+                            <Link to="/login" className="text-gray-300 hover:text-white">Login</Link>
+                            <Link to="/register" className="text-gray-300 hover:text-white">Signup</Link>
+                        </>
+                    )}
+                </div>
+            </div>
+        </nav>
+    );
+};
+
+export default Navbar;
