@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import NoteModal from '../../../components/note-modal/note-modal';
 import BlueButton from '../../../components/blue-button/blue-button';
 import { Link } from 'react-router-dom';
 
-export const Login: React.FC = () => {
+export const Login = () => {
     const [formData, setFormData] = useState({
         email: '',
         password: ''

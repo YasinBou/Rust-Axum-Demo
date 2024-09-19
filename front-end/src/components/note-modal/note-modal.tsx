@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface NoteModalProps {
     title: string;
     children: React.ReactNode;
 }
 
-const NoteModal: React.FC<NoteModalProps> = ({ title, children }) => {
+const NoteModal = ({ title, children }: NoteModalProps) => {
     return (
         <div className="bg-white p-6 rounded-lg shadow-lg max-w-md w-full text-center">
             <h1 className="text-2xl font-semibold mb-4">{title}</h1>

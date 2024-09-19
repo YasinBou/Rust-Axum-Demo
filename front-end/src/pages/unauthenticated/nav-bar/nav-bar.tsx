@@ -4,7 +4,7 @@ interface NavbarProps {
     isLoggedIn: boolean;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isLoggedIn }) => {
+const Navbar = ({ isLoggedIn }: NavbarProps) => {
     return (
         <nav className="bg-gray-800 p-4">
             <div className="flex items-center justify-between w-full">

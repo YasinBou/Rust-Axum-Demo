@@ -1,9 +1,8 @@
-import React from 'react';
 import NoteModal from '../../../components/note-modal/note-modal';
 import BlueButton from '../../../components/blue-button/blue-button';
 import { Link } from 'react-router-dom';
 
-export const Landing: React.FC = () => {
+export const Landing = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gray-100 p-4">
             <NoteModal title="Welcome to My To-Do List Project!">
